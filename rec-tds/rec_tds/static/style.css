@@ -20,12 +20,77 @@ body{
 }
 /*fim da página principal*/
 
+.login p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 580px;
+}
 
 /*Login*/
+.login-insert{
+    background-color: whitesmoke;
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+    position: center;
+    margin: 80px 500px 100px 500px;
+    padding: 7px;
+}
+
+.login-insert div{
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 190px;
+}
+
+.login-insert div input{
+    width: 190px;
+}
+
+.login-insert button{
+    width: 80px;
+    height: 50px;
+    margin: 50px 80px 50px 80px;
+    background-color: darkorange;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 /*fim do login*/
 
 
 /*Cadastro*/
+
+.cadastro{
+    background-color: whitesmoke;
+    width: 250px;
+    height: 470px;
+    border-radius: 20px;
+    position: center;
+    margin: 80px 500px 100px 500px;
+    padding: 7px;
+}
+
+.cadastro div{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.cadastro div input{
+    width: 190px;
+}
+
+.cadastro button{
+    width: 100px;
+    height: 50px;
+    margin: 50px 80px 50px 80px;
+    background-color: darkorange;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 /*fim do cadastro*/

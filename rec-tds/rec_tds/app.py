@@ -14,3 +14,14 @@ def login():
 def cadastro():
     return render_template('cadastro.html')
 
+@app.route("/nova-senha")
+def newpassword():
+    return render_template('novasenha.html')
+
+@app.route("/main")
+def inicio():
+    return render_template('main.html')
+
+@app.route("/locacao")
+def locacao():
+    return render_template('locacao.html')
