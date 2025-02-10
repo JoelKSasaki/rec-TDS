@@ -1,26 +1,15 @@
-.login{
-    background-color: orange;
-}
-
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orange;
 }
-
 /*página principal*/
-.doc a img{
-    width: 100%;
-    height: 500px;
-    margin: 0;
-}
-
-.f40 a img{
-    width: 100%;
-    height: 500px;
-    margin: 0;
+body img{
+    width: 400px;
+    height: 400px;
 }
 /*fim da página principal*/
 
-.login p{
+body p{
     font-size: 20px;
     font-weight: 500;
     margin-top: 50px;
@@ -36,7 +25,7 @@ body{
     height: 320px;
     border-radius: 20px;
     position: center;
-    margin: 80px 500px 100px 500px;
+    margin: 80px 550px 100px 550px;
     padding: 7px;
 }
 
@@ -54,7 +43,7 @@ body{
     position: center;
 }
 
-.login-insert button{
+.login-insert a input{
     width: 80px;
     height: 50px;
     margin: 50px 80px 50px 80px;
@@ -89,7 +78,7 @@ body{
     width: 190px;
 }
 
-.cadastro button{
+.cadastro a input{
     width: 100px;
     height: 50px;
     margin: 50px 80px 50px 80px;
