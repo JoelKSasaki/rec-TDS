@@ -26,3 +26,7 @@ def inicio():
 @app.route("/locacao")
 def locacao():
     return render_template('locacao.html')
+
+@app.route("/cadastro-veiculo")
+def veiculo():
+    return render_template('cadveiculo.html')

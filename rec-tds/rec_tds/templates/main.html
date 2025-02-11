@@ -15,8 +15,14 @@
                         <img src="../static/imagens/seguros.png" alt="" class="logo">                        
                     </td>
 
+                    <td>
+                        <a href="/cadastro-veiculo">
+                            Deseja cadastrar um veículo?
+                        </a>
+                    </td>
+
                     <td class="frase">
-                        <p>Busque pelo que precisa pelos melhores preços!!!</p>                      
+                        <p>Busque por seu automóvel pelos melhores preços!!!</p>                      
                     </td>
                 </tr>
             </table>
@@ -35,45 +41,43 @@
                 </tr>
             </table>
 
-            <div class="filtros1">
-                <table>
-                    <tr>
-                        <td class="busca-local">
-                            <input type="text" name="" id="" placeholder="Local de retirada" class="locais">
-                        </td>
+            <div class="filtros2">
+                <div class="arcondicionado">
+                    <select name="arcon" id="">
+                        <option value="" disabled selected>Ar-condicionado</option>
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
+                </div>
 
-                        <td class="busca-data">
-                            <input type="date" name="" id="" class="datas">
-                        </td>
+                <div class="cambio">
+                    <select name="cambio" id="">
+                        <option value="" disabled selected>Câmbio</option>
+                        <option value="Man">Manual</option>
+                        <option value="Auto">Automático</option>
+                    </select>
+                </div>
 
-                        <td class="busca-hora">
-                            <input type="time" name="" id="" class="horarios">
-                        </td>
-                    </tr>
+                <div class="portas">
+                    <select name="n-portas" id="">
+                        <option value="" disabled selected>Nº de portas</option>
+                        <option value="duas">2</option>
+                        <option value="quatro">4</option>
+                    </select>
+                </div>
 
-                    <tr>
-                        <td class="busca-local">
-                            <input type="text" name="" id=""  placeholder="Local de devolução" class="locais">
-                        </td>
-
-                        <td class="busca-data">
-                            <input type="date" name="" id=""  class="datas">
-                        </td>
-
-                        <td class="busca-hora">
-                            <input type="time" name="" id=""  class="horarios">
-                        </td>
-                    </tr>
-
-                    <tr class="confirmar">
-                        <td class="botao">
-                            <a href="/locacao">
-                                <input type="submit" placeholder="continuar" class="continuar">                            
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="lugares">
+                    <select name="lugares" id="">
+                        <option value="" disabled selected>Nº de lugares</option>
+                        <option value="">2</option>
+                        <option value="">5</option>
+                    </select>
+                </div>
             </div>
+        </div>
+
+        <div class="carros">
+            <p>Qual será o automóvel da vez?</p>
         </div>
     </div>
 </body>
