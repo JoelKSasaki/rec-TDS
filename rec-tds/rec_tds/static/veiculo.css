@@ -1,0 +1,58 @@
+body img{
+    width: 130px;
+    height: 130px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orange;
+}
+
+/* inputs */
+
+.carro{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.carro div select{
+    position: relative;
+    height: 40px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.carro div input{
+    position: relative;
+    height: 30px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+body .cadastrar{
+    padding: 20px 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* fim dos inputs */
+
+body p{
+    margin-left: 60%;
+    transform: translateX(-60%);
+    margin-bottom: 50px;
+    font-size: 20px;
+}

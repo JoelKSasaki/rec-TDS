@@ -8,6 +8,12 @@ body{
     border: 5px solid black;
 }
 
+body img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+}
 
 /*topo linha 1*/
 
@@ -27,7 +33,7 @@ table tr .frase{
 }
 
 table tr .frase p{
-    margin-left: 400px;
+    margin-left: 300px;
     font-size: 26px;
     font-weight: 500;
 }
@@ -59,7 +65,18 @@ table .pontos-positivos .beneficio2{
 
 /*fim da linha 2*/
 
+.filtros1 p{
+    margin-left: 57%;
+    transform: translateX(-57%);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
 /*dados da locação*/
+
+.filtros1 table{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 
 .filtros1 table tr .busca-local{
     width: 600px;
@@ -90,6 +107,7 @@ table .pontos-positivos .beneficio2{
     height: 50px;
     border-radius: 15px;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .filtros1 table tr td .horarios{
@@ -98,6 +116,7 @@ table .pontos-positivos .beneficio2{
     border-radius: 15px;
     font-size: 24px;
     margin-left: 80px;
+    cursor: pointer;
 }
 
 /*fim dos dados da locação*/
@@ -105,14 +124,14 @@ table .pontos-positivos .beneficio2{
 
 /*botão continuar*/
 
-.filtros1 table .confirmar .botao{
-    width: 1000px;
-    height: 40px;
-}
-
-.filtros1 table .confirmar .botao .continuar{
-    margin-left: 400px;
+.filtros1 a input{
+    margin-left: 50%;
+    transform: translateX(-50%);
     padding: 20px 30px;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /*fim dos botão continuar*/
@@ -133,6 +152,31 @@ table .pontos-positivos .beneficio2{
     width: 120px;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* fim dos filtros */
+
+/* botão filtrar */
+
+.top input{
+    padding: 20px 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* fim do botão filtrar */
+
+
+/* carros disponíveis */
+
+.carros p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 60%;
+    transform: translateX(-60%);
+}

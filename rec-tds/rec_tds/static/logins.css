@@ -4,8 +4,17 @@ body{
 }
 /*página principal*/
 body img{
-    width: 400px;
-    height: 400px;
+    width: 130px;
+    height: 130px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.inicio img{
+    width: 600px;
+    height: 620px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 /*fim da página principal*/
 
@@ -20,12 +29,13 @@ body p{
 /*Login*/
 .login-insert{
     align-content: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
     background-color: whitesmoke;
     width: 250px;
     height: 320px;
     border-radius: 20px;
     position: center;
-    margin: 80px 550px 100px 550px;
     padding: 7px;
 }
 
@@ -61,11 +71,12 @@ body p{
 .cadastro{
     align-content: center;
     background-color: whitesmoke;
+    margin-left: 50%;
+    transform: translateX(-50%);
     width: 250px;
     height: 470px;
     border-radius: 20px;
     position: center;
-    margin: 80px 500px 100px 500px;
     padding: 7px;
 }
 
@@ -96,11 +107,12 @@ body p{
 .new-senha{
     align-content: center;
     background-color: whitesmoke;
+    margin-left: 50%;
+    transform: translateX(-50%);
     width: 250px;
     height: 320px;
     border-radius: 20px;
     position: center;
-    margin: 80px 500px 100px 500px;
     padding: 7px;
 }
 
@@ -113,7 +125,7 @@ body p{
     width: 190px;
 }
 
-.new-senha button{
+.new-senha input{
     width: 100px;
     height: 50px;
     margin: 50px 80px 50px 80px;
