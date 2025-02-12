@@ -45,22 +45,19 @@ def cadastrarveiculo(con, placa, marca, id, tipo, arcon, portas, cambio, lugares
     cursor.execute(sql, (placa, marca, id, tipo, tem_ar, portas, cambio, lugares))
     con.commit()
 
-def salvaruser(con, nome, sobrenome, senha, datanascimento, funcionario):
+def cadastraruser(con, email, nome, sobrenome, senha, datanascimento, funcionario):
     cursor = con.cursor()
-    sql = "INSERT INTO pessoa (nome, sobrenome, senha, datanascimento, funcionario) VALUES (%s, %s, %s, %s, %s)"
-    cursor.execute(sql, (nome, sobrenome, senha, datanascimento, funcionario))
-    users = []
-
-    for register in cursor:
-        nome = register["nome"]
-        sobrenome = register["sobrenome"]
-        senha = register["senha"]
-        datanascimento = register["datanascimento"]
-        funcionario = register["funcionario"]
-
-        user = Usuario(nome, sobrenome, senha, datanascimento, funcionario)
-        users.append(user)
-
-
+    sql = "INSERT INTO pessoa (email, nome, sobrenome, senha, datanascimento, funcionario) VALUES (%s, %s, %s, %s, %s, %s)"
+    print("email=", email)
+    print("nome=", nome)
+    print("sobrenome=", sobrenome)
+    print("senha=", senha)
+    print("datanascimento=", datanascimento)
+    print("funcionario=", funcionario)
+    cursor.execute(sql, (email, nome, sobrenome, senha, datanascimento, funcionario))
     con.commit()
 
+def salvarlocacao(con, id_locacao, local_retirada, local_devolucao, data_retirada, data_devolucao, hora_retirada, hora_devolucao):
+    cursor = con.cursor()
+    sql = "INSERT INTO pessoa (id_locacao, local_retirada, local_devolucao, data_retirada, data_devolucao, hora_retirada, hora_devolucao) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    cursor.execute(sql, (id_locacao, local_retirada, local_devolucao, data_retirada, data_devolucao, hora_retirada, hora_devolucao))
