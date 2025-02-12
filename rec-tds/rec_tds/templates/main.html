@@ -83,6 +83,18 @@
 
         <div class="carros">
             <p>Qual será o automóvel da vez?</p>
+
+            {%if veiculos%}
+            {%for veiculo in veiculos%}
+                <div class="resultado">
+                    <p class="descricao">{{veiculo.marca}} {{veiculo.tipo}}</p>
+                    <img src="../static/imagens/carros/{{veiculo.marca}}-{{veiculo.tipo}}.jpg" alt="">
+                    <a href="/locacao">
+                        <input type="button" value="">                    
+                    </a>
+                </div>
+            {%endfor%}
+            {%endif%}
         </div>
     </div>
 </body>
