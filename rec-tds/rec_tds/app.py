@@ -54,7 +54,14 @@ def locacao():
 
 @app.route("/concluirlocacao")
 def concluirlocacao():
-    
+    lretirada = request.form.get('localretirada')
+    ldevolucao = request.form.get('localdevolucao')
+    dretirada = request.form.get('dataretirada')
+    ddevolucao = request.form.get('datadevolucao')
+    hretirada = request.form.get('horaretirada')
+    hdevolucao = request.form.get('horadevolucao')
+
+    salvarlocacao(conexao, lretirada, ldevolucao, dretirada, ddevolucao, hretirada, hdevolucao)
     return redirect("/main")
 
 @app.route("/cadastro-veiculo")
