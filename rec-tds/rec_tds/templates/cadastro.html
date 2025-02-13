@@ -10,40 +10,43 @@
     <p>Cadastre-se</p>
     <form action="salvarusuario" method="post">
         <div class="cadastro">
-            <div class="name">
-                <span>Nome</span>
-                <br>
-                <input type="text" name="name" id="" maxlength="50">
-            </div>
-    
-            <div class="surname">
-                <span>Sobrenome</span>
-                <br>
-                <input type="text" name="surname" id="" maxlength="50">
-            </div>
-    
-            <div class="cadastrar-email">
+            <div class="newemail">
                 <span>E-mail</span>
                 <br>
-                <input type="text" name="newemail" id="" maxlength="50">
+                <input type="text" name="newemail" id="" required>
+            </div>
+
+            <div class="nome">
+                <span>Nome</span>
+                <br>
+                <input type="text" name="name" id="" required>
+                
             </div>
     
-            <div class="criar-senha">
+            <div class="sobrenome">
+                <span>Sobrenome</span>
+                <br>
+                <input type="text" name="surname" id="" required>
+                
+            </div>
+    
+            <div class="newsenha">
                 <span>Senha</span>
                 <br>
-                <input type="password" name="createsenha" id="" maxlength="10">
+                <input type="password" name="createsenha" id="" maxlength="10" required>
+                
             </div>
     
-            <div class="confirmar-senha">
+            <div class="confirmarsenha">
                 <span>Confirme sua senha</span>
                 <br>
-                <input type="password" name="confirmsenha" id="" maxlength="10">
+                <input type="password" name="confirmsenha" id="" maxlength="10" required>
             </div>
     
-            <div class="idade">
+            <div class="data">
                 <span>Data de nascimento</span>
                 <br>
-                <input type="date" name="nascimento" id="">
+                <input type="date" name="nascimento" id="" required>
             </div>
     
             <div class="funcionario">
@@ -53,7 +56,7 @@
             <a href="/login">
                 <input type="submit" class="confirm-cadastro" placeholder="">      
             </a>
-        </div>
+        </div>      
     </form>
 </body>
 </html>

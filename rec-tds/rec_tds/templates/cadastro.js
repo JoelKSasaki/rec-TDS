@@ -8,6 +8,8 @@ const data = document.getElementById('date')
 
 const dataatual = new Date()
 const dataISO = dataatual.toISOString().split('T')[0]
+const AnoValid = new Date().getFullYear()
+
 
 cadastro.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -66,6 +68,21 @@ function checkInputSenha(){
     }
 }
 
+function checkInputCheckSenha(){
+    const confirmarsenhavalor = confirmarsenhasenha.value;
+
+    if(confirmarsenhavalor === ""){
+        erroInput(confirmarsenha, "campo obrigatório!")
+    }else if(confirmarsenhavalor.length < 5){
+        erroInput(confirmarsenha, "senha precisa ter, no mínimo, 5 caracteres")
+    }else if(confirmarsenhavalor != senhavalor){
+        erroInput(confirmarsenha, "as senhas não são iguais")
+    }
+    else{
+        const formItem = confirmarsenha.parentElement;
+        formItem.className = "formulario"
+    }
+}
 
 
 function erroInput(input, mensagem){

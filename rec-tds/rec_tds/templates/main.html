@@ -84,17 +84,22 @@
         <div class="carros">
             <p>Qual será o automóvel da vez?</p>
 
+            <div class="carro">
             {%if veiculos%}
             {%for veiculo in veiculos%}
                 <div class="resultado">
-                    <p class="descricao">{{veiculo.marca}} {{veiculo.tipo}}</p>
-                    <img src="../static/imagens/carros/{{veiculo.marca}}-{{veiculo.tipo}}.jpg" alt="">
-                    <a href="/locacao">
-                        <input type="button" value="">                    
-                    </a>
+                    <div class="car">
+                        <p class="descricao">{{veiculo.marca}}-{{veiculo.tipo}}</p>
+                        <img src="../static/imagens/carros/{{veiculo.marca}}-{{veiculo.tipo}}.jpg" alt="">
+                        <br>
+                        <a href="/locacao">
+                            <input type="button" value="" placeholder="Reservar">                    
+                        </a>
+                    </div>
                 </div>
             {%endfor%}
             {%endif%}
+            </div>
         </div>
     </div>
 </body>

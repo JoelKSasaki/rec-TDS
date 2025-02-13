@@ -18,13 +18,18 @@ def cadastro():
 
 @app.route("/salvarusuario", methods = ["POST"])
 def salvarusuario():
+    email = request.form.get('newemail')
     nome = request.form.get('name')
     sobrenome = request.form.get('surname')
-    email = request.form.get('newemail')
     createsenha = request.form.get('createsenha')
     confirmsenha = request.form.get('confirmsenha')
     datanascimento = request.form.get('nascimento')
     funcionario = request.form.get('funcionario')
+
+    if not funcionario:
+        funcionario = False
+    else:
+        funcionario = True
 
     '''if createsenha != confirmsenha:
         flash("As senhas precisam ser iguais")
@@ -35,8 +40,7 @@ def salvarusuario():
         return redirect("/cadastro")'''
     
     cadastraruser(conexao, nome, sobrenome, email, createsenha, datanascimento, funcionario)
-    
-    return redirect("/login")
+    return redirect("/login") 
 
 
 @app.route("/nova-senha")
@@ -52,7 +56,7 @@ def inicio():
 def locacao():
     return render_template('locacao.html')
 
-@app.route("/concluirlocacao")
+@app.route("/concluirlocacao", methods = ["POST"])
 def concluirlocacao():
     lretirada = request.form.get('localretirada')
     ldevolucao = request.form.get('localdevolucao')
