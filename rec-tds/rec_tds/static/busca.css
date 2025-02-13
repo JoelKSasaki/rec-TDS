@@ -124,7 +124,7 @@ table .pontos-positivos .beneficio2{
 
 /*botão continuar*/
 
-.filtros1 a input{
+.filtros1 input .concluir{
     margin-left: 50%;
     transform: translateX(-50%);
     padding: 20px 30px;
@@ -206,7 +206,7 @@ table .pontos-positivos .beneficio2{
     margin-left: 50%;
     transform: translateX(-50%);
     width: 230px;
-    height: 230px;
+    height: 180px;
 }
 
 .car a input{
