@@ -61,3 +61,4 @@ def salvarlocacao(con, id_locacao, local_retirada, local_devolucao, data_retirad
     cursor = con.cursor()
     sql = "INSERT INTO pessoa (id_locacao, local_retirada, local_devolucao, data_retirada, data_devolucao, hora_retirada, hora_devolucao) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     cursor.execute(sql, (id_locacao, local_retirada, local_devolucao, data_retirada, data_devolucao, hora_retirada, hora_devolucao))
+    con.commit()

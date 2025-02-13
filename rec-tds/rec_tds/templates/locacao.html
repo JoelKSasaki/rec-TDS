@@ -9,37 +9,39 @@
 <body>
     <img src="../static/imagens/seguros.png" alt="">     
     <div class="filtros1">
-        <p>Agende a retirada e a devolução para concluir a transação</p>       
-        <table>
-            <tr>
-                <td class="busca-local">
-                    <input type="text" name="local-retirada" id="" placeholder="Onde deseja retirar o veículo?" class="locais">
-                </td>
+        <p>Agende a retirada e a devolução para concluir a transação</p>
+        <form action="concluirlocacao" method="post">
+            <table>
+                <tr>
+                    <td class="busca-local">
+                        <input type="text" name="localretirada" id="" placeholder="Onde deseja retirar o veículo?" class="locais">
+                    </td>
 
-                <td class="busca-data">
-                    <input type="date" name="data-retirada" id="" class="datas">
-                </td>
+                    <td class="busca-data">
+                        <input type="date" name="dataretirada" id="" class="datas">
+                    </td>
 
-                <td class="busca-hora">
-                    <input type="time" name="hora-retirada" id="" class="horarios">
-                </td>
-            </tr>
+                    <td class="busca-hora">
+                        <input type="time" name="horaretirada" id="" class="horarios">
+                    </td>
+                </tr>
 
-            <tr>
-                <td class="busca-local">
-                    <input type="text" name="local-devolucao" id=""  placeholder="Onde deseja devolver o veículo?" class="locais">
-                </td>
+                <tr>
+                    <td class="busca-local">
+                        <input type="text" name="localdevolucao" id=""  placeholder="Onde deseja devolver o veículo?" class="locais">
+                    </td>
 
-                <td class="busca-data">
-                    <input type="date" name="data-devolucao" id=""  class="datas">
-                </td>
+                    <td class="busca-data">
+                        <input type="date" name="datadevolucao" id=""  class="datas">
+                    </td>
 
-                <td class="busca-hora">
-                    <input type="time" name="hora-devolucao" id=""  class="horarios">
-                </td>
-            </tr>
-        </table>
-
+                    <td class="busca-hora">
+                        <input type="time" name="horadevolucao" id=""  class="horarios">
+                    </td>
+                </tr>
+            </table>
+        </form>       
+        
         <a href="/main">
             <input type="submit" placeholder="concluir">                            
         </a>

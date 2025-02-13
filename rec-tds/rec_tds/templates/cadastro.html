@@ -8,51 +8,52 @@
 </head>
 <body>
     <p>Cadastre-se</p>
-    <div class="cadastro">
-
-        <div class="name">
-            <span>Nome</span>
-            <br>
-            <input type="text" name="name" id="" maxlength="50">
+    <form action="salvarusuario" method="post">
+        <div class="cadastro">
+            <div class="name">
+                <span>Nome</span>
+                <br>
+                <input type="text" name="name" id="" maxlength="50">
+            </div>
+    
+            <div class="surname">
+                <span>Sobrenome</span>
+                <br>
+                <input type="text" name="surname" id="" maxlength="50">
+            </div>
+    
+            <div class="cadastrar-email">
+                <span>E-mail</span>
+                <br>
+                <input type="text" name="newemail" id="" maxlength="50">
+            </div>
+    
+            <div class="criar-senha">
+                <span>Senha</span>
+                <br>
+                <input type="password" name="createsenha" id="" maxlength="10">
+            </div>
+    
+            <div class="confirmar-senha">
+                <span>Confirme sua senha</span>
+                <br>
+                <input type="password" name="confirmsenha" id="" maxlength="10">
+            </div>
+    
+            <div class="idade">
+                <span>Data de nascimento</span>
+                <br>
+                <input type="date" name="nascimento" id="">
+            </div>
+    
+            <div class="funcionario">
+                <input type="checkbox" name="funcionario" id="">Funcionário?
+            </div>
+    
+            <a href="/login">
+                <input type="submit" class="confirm-cadastro" placeholder="">      
+            </a>
         </div>
-
-        <div class="surname">
-            <span>Sobrenome</span>
-            <br>
-            <input type="text" name="surname" id="" maxlength="50">
-        </div>
-
-        <div class="cadastrar-email">
-            <span>E-mail</span>
-            <br>
-            <input type="text" name="newemail" id="" maxlength="50">
-        </div>
-
-        <div class="criar-senha">
-            <span>Senha</span>
-            <br>
-            <input type="password" name="createsenha" id="" maxlength="10">
-        </div>
-
-        <div class="confirmar-senha">
-            <span>Confirme sua senha</span>
-            <br>
-            <input type="password" name="confirmsenha" id="" maxlength="10">
-        </div>
-
-        <div class="idade">
-            <span>Data de nascimento</span>
-            <br>
-            <input type="date" name="nascimento" id="">
-        </div>
-
-        <div class="funcionario">
-            <input type="checkbox" name="funcionario" id="">Funcionário?
-        </div>
-
-        <a href="/login">
-            <input type="submit" class="confirm-cadastro">Cadastrar</input>        
-        </a>
-    </div>
+    </form>
 </body>
 </html>

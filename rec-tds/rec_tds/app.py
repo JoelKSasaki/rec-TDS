@@ -16,7 +16,7 @@ def login():
 def cadastro():
     return render_template('cadastro.html')
 
-@app.route("/salvar-usuario", methods = ["POST"])
+@app.route("/salvarusuario", methods = ["POST"])
 def salvarusuario():
     nome = request.form.get('name')
     sobrenome = request.form.get('surname')
@@ -26,13 +26,13 @@ def salvarusuario():
     datanascimento = request.form.get('nascimento')
     funcionario = request.form.get('funcionario')
 
-    if createsenha != confirmsenha:
+    '''if createsenha != confirmsenha:
         flash("As senhas precisam ser iguais")
         return redirect("/cadastro")
     
-    if not nome or not sobrenome or not email or not createsenha or not confirmsenha or not datanascimento or not funcionario:
+    if nome == "" or sobrenome == "" or email == "" or createsenha == "" or confirmsenha == "" or datanascimento == "":       
         flash("Todos os campos são obrigatórios")
-        return redirect("/cadastro")
+        return redirect("/cadastro")'''
     
     cadastraruser(conexao, nome, sobrenome, email, createsenha, datanascimento, funcionario)
     
@@ -52,11 +52,10 @@ def inicio():
 def locacao():
     return render_template('locacao.html')
 
-@app.route("/concluir-locacao")
+@app.route("/concluirlocacao")
 def concluirlocacao():
     
     return redirect("/main")
-
 
 @app.route("/cadastro-veiculo")
 def veiculo():
